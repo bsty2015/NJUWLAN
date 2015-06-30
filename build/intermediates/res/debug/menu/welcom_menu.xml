@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jjlink.jieyun.Welcome">
+
+        <!--<item android:id="@+id/c_auto_login" android:title="@string/cancel_auto_login"/>-->
+       <!-- <item android:id="@+id/c_back_task" android:title="@string/cancel_task_back"/>-->
+        <!--<item android:id="@+id/update" android:title="@string/update"/>-->
+        <item android:id="@+id/exit" android:title="@string/exit"
+            android:orderInCategory="100" />
+
+
+</menu>
+<!-- From: file:/home/zlu/Workspace/AndroidAPPS/njuwlan/src/main/res/menu/welcom_menu.xml -->

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jjlink.jieyun"
+    android:versionCode="2"
+    android:versionName="0.2.3">
+
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!--
+ To retrieve OAuth 2.0 tokens or invalidate tokens to disconnect a user. This disconnect
+     option is required to comply with the Google+ Sign-In developer policies
+    -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <!-- To retrieve the account name (email) as part of sign-in: -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.BIND_VOICE_INTERACTION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name="com.jjlink.jieyun.njuwlan.util.ContextUtil"
+        android:allowBackup="true"
+        android:icon="@drawable/jieyun_logo"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".njuwlan.activity.StartPage"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".njuwlan.activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+
+        <!--
+        <receiver android:name=".BootBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+            </intent-filter>
+        </receiver>
+        -->
+        <!--<receiver android:name="com.jjlink.broadcast.NetBroadcast">
+
+        </receiver>
+        <receiver android:name=".BringToFrontReceiver">
+            <intent-filter>
+                <action android:name="com.jjlink.jieyun.BringToFront" />
+            </intent-filter>
+        </receiver>-->
+        <!--
+        <receiver android:name=".WifiBroadcast">
+            <intent-filter>
+                <action android:name="com.jjlink.wifiBord"></action>
+            </intent-filter>
+        </receiver>
+        -->
+        <!--android:enabled="true" -->
+
+        <receiver android:name=".njuwlan.broadcast.NetBroadcast">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_CHANGED"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.DATE_CHANGED"/>
+                <action android:name="android.intent.action.DOCK_EVENT"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.NETWORK_TICKLE_RECEIVED"/>
+                <action android:name="android.intent.action.RUN"/>
+                <action android:name="android.intent.action.SIG_STR"/>
+                <action android:name="android.intent.action.SERVICE_STATE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name=".njuwlan.service.DaemonService">
+            <intent-filter>
+                <action android:name="com.jjlink.service.DaemonService"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name=".njuwlan.service.CheckNetService"
+            >
+            <intent-filter>
+                <action android:name="com.jjlink.service.CheckNetService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".njuwlan.service.AutoConnection"
+            >
+            <intent-filter >
+                <action android:name="com.jjlink.jieyun.autoConnection" />
+            </intent-filter>
+        </service>
+        <service android:name=".njuwlan.activity.FloatWindowService"
+            >
+            <intent-filter>
+                <action android:name="com.jjlink.jieyun.floatWindowService" />
+            </intent-filter>
+        </service>
+        <!-- 注册service -->
+
+        <activity
+            android:name=".njuwlan.activity.Logining"
+            android:allowTaskReparenting="true"
+            android:label="@string/title_activity_logining"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.jjlink.jieyun.loging" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".njuwlan.activity.Welcome"
+            android:allowTaskReparenting="true"
+            android:label="@string/title_activity_welcome"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+
+            <!-- android:launchMode="singleTop" -->
+
+        </activity>
+
+    </application>
+
+</manifest>

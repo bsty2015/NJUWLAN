@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#f4f4f4"
+    tools:context="com.jjlink.jieyun.Logining">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3">
+        
+        <ProgressBar
+            android:id="@+id/pgBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+            />
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pgBar"
+            android:layout_centerHorizontal="true"
+            android:text="正在登录"
+            android:textColor="#6C0E6E"
+            android:textSize="18sp"/>
+        </RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="70dip"
+            android:layout_height="35dip"
+            android:text="取消"
+            android:gravity="center"
+            android:background="@drawable/login_button_nor"
+            android:textColor="#6C0E6E"
+            android:visibility="invisible"
+            android:textSize="12sp"/>
+        </LinearLayout>
+</LinearLayout>

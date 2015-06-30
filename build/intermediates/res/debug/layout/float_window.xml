@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/float_window"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="60dp"
+    android:layout_height="60dp"
+    tools:context=".FloatWindowService">
+
+    <Button
+        android:id="@+id/float_id"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:background="@drawable/logo"/>
+    <Button
+        android:id="@+id/hide"
+        android:layout_width="55dp"
+        android:layout_height="15dp"
+        android:background="@drawable/hide"
+        android:visibility="invisible"/>
+</LinearLayout><!-- From: file:/home/zlu/Workspace/AndroidAPPS/njuwlan/src/main/res/layout/float_window.xml -->

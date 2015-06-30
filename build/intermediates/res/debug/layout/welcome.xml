@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:id="@+id/welcome"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f4f4f4"
+    tools:context="com.jjlink.jieyun.Welcome">
+
+  <!--  <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="登录成功"
+        android:textSize="32pt"
+        android:textColor="#f00"/>-->
+
+    <!--<TextView
+        android:id="@+id/infoText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:textColor="#fff"
+        android:ellipsize="marquee"
+        android:singleLine="false"
+        android:editable="false"/>-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/nju_logo"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/info_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:singleLine="false"
+        android:scrollbars="vertical"
+        android:textColor="#6C0E6E"
+        android:editable="false"
+        android:text="@string/login_portal_success"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="10dp"
+        android:fontFamily="微软雅黑"
+        android:textSize="30dp" />
+
+   <TextView
+        android:id="@+id/textInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="40dp"
+        android:textColor="#6C0E6E"
+        android:textSize="18dp"
+        android:paddingRight="40dp"
+        />
+
+    <TextView
+        android:id="@+id/timeInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="40dp"
+        android:textColor="#6C0E6E"
+        android:fontFamily="微软雅黑"
+        android:textSize="18dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/prompt_info"
+        android:textColor="#6C0E6E"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="12dp"
+        />
+
+   <!-- <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:singleLine="true"
+        android:background="@drawable/lout"
+        android:textColor="#000"
+        android:textSize="12sp"/>-->
+</LinearLayout>
+<!-- From: file:/home/zlu/Workspace/AndroidAPPS/njuwlan/src/main/res/layout/welcome.xml -->

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">南大无线</string>
+    <string name="cancel_auto_login">取消自动登陆</string>
+    <string name="cancel_task_back">取消常驻内存</string>
+    <string name="exit">退出</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="login_username_hint">请输入用户名</string>
+    <string name="login_label_username">用户名</string>
+    <string name="login_label_password">密码</string>
+    <string name="login_password_hint">请输入密码</string>
+    <string name="login_label_signin">登&#160; &#160;录</string>
+    <string name="title_activity_logining">Logining</string>
+    <string name="title_activity_welcome">Welcome</string>
+    <string name="wifi_satus_context">不在范围内或信号太弱\n请手动选择其他WIFI连接</string>
+    <string name="update">更新</string>
+    <string name="prompt_info">上滑注销,左滑返回桌面</string>
+    <string name="login_portal_success">NJU-WLAN</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_my_alert_dialog">MyAlertDialog</string>
+
+
+    <!--发现新版本提示-->
+    <string name="new_version_checked">有新版本发布，建议您更新！</string>
+    <!--取消更新提示-->
+    <string name="cancel_update_app">已经是最新版本，不需要更新</string>
+    <!--获取app是否有新版本的配置文件所在的服务器地址-->
+    <string name="app_check_version_xml_path">http://192.9.1.12:8080/jieyun.xml</string>
+    <!--更新app的服务器下载地址-->
+    <string name="app_new_version_download_path">http://192.9.1.12:8080/jieyun.apk</string>
+    <!--下载应用保存名称-->
+    <string name="app_saved_name">jieyun.apk</string>
+    <string name="title_activity_start_page">StartPage</string>
+
+    <string name="start_info">捷运</string>
+    <string name="action_settings">Settings</string>
+</resources>
