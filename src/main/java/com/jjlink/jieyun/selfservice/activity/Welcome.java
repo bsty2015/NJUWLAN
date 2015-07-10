@@ -1,4 +1,4 @@
-package com.jjlink.jieyun.njuwlan.activity;
+package com.jjlink.jieyun.selfservice.activity;
 
 import android.annotation.TargetApi;
 import android.app.NotificationManager;
@@ -27,6 +27,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.jjlink.jieyun.R;
+import com.jjlink.jieyun.njuwlan.activity.JieyunActivity;
+import com.jjlink.jieyun.njuwlan.activity.JieyunWindowManager;
+import com.jjlink.jieyun.njuwlan.activity.LoginActivity;
 import com.jjlink.jieyun.njuwlan.log.JieyunLog;
 import com.jjlink.jieyun.njuwlan.service.AutoConnection;
 import com.jjlink.jieyun.njuwlan.util.ContextUtil;
@@ -60,8 +63,8 @@ public class Welcome extends JieyunActivity {
     private boolean isScorllStart = false;
     private boolean isUpAndDown = false;
     private static final String LOGOUT_URL = "http://p.nju.edu.cn:8080/portalSpring/logout";
-    private static final String action = "http://p.nju.edu.cn:8080/portalSpring/applogin";
-    private static final String appPackageName = "com.jjlink.jieyun";
+    private static final String ACTION = "http://p.nju.edu.cn:8080/portalSpring/applogin";
+    private static final String APP_PACKAGE_NAME = "com.jjlink.jieyun";
     public static final String AUTO_CONN_SERVICE = "com.jjlink.jieyun.autoConnection";
     private static final String SERVICE_NAME = "com.jjlink.jieyun.AutoConnection";
     private static final String W_SSID = "NJU-WLAN";
@@ -217,7 +220,7 @@ public class Welcome extends JieyunActivity {
                     Bundle bundle = Welcome.this.getIntent().getExtras();
                     if (bundle == null || bundle.isEmpty()) {
                         bundle = getLoginInfo();
-                        Map<String, Object> map = NetUtil.LoginOfPost(bundle, action);
+                        Map<String, Object> map = NetUtil.LoginOfPost(bundle, ACTION);
                         //int code = (int) map.get("responseCode");
                         String result = (String) map.get("result");
                         bundle.putString("result", result);
@@ -288,6 +291,7 @@ public class Welcome extends JieyunActivity {
 
     }
 
+    @TargetApi(Build.VERSION_CODES.GINGERBREAD)
     private void createWelcomeUI(Bundle bundle) {
         String result = bundle.getString("result");
         logger.debug(result);
@@ -374,6 +378,7 @@ public class Welcome extends JieyunActivity {
      *
      * @return
      */
+    @TargetApi(Build.VERSION_CODES.GINGERBREAD)
     private long getInitDate() throws JSONException {
         Bundle bundle = Welcome.this.getIntent().getExtras();
         if (bundle == null || bundle.isEmpty()) {

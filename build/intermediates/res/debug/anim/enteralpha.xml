@@ -3,4 +3,4 @@
     <alpha android:fromAlpha="0"
         android:toAlpha="1.0"
         android:duration="500"/>
-</set><!-- From: file:/home/zlu/Workspace/AndroidAPPS/njuwlan/src/main/res/anim/enteralpha.xml -->
+</set><!-- From: file:/Users/bsty/androidapps/Androidapps/njuwlan/src/main/res/anim/enteralpha.xml -->

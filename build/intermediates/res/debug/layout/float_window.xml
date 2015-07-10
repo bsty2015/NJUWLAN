@@ -18,4 +18,4 @@
         android:layout_height="15dp"
         android:background="@drawable/hide"
         android:visibility="invisible"/>
-</LinearLayout><!-- From: file:/home/zlu/Workspace/AndroidAPPS/njuwlan/src/main/res/layout/float_window.xml -->
+</LinearLayout><!-- From: file:/Users/bsty/androidapps/Androidapps/njuwlan/src/main/res/layout/float_window.xml -->

@@ -127,7 +127,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".njuwlan.activity.Welcome"
+            android:name=".selfservice.activity.Welcome"
             android:allowTaskReparenting="true"
             android:label="@string/title_activity_welcome"
             android:launchMode="singleTask"

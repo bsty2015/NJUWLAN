@@ -24,6 +24,7 @@ import com.jjlink.jieyun.njuwlan.service.AutoConnection;
 import com.jjlink.jieyun.njuwlan.service.CheckNetService;
 import com.jjlink.jieyun.njuwlan.util.ContextUtil;
 import com.jjlink.jieyun.njuwlan.util.NetUtil;
+import com.jjlink.jieyun.selfservice.activity.Welcome;
 
 import org.json.JSONObject;
 
